@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="night">
+<html lang="en" data-theme="halloween">
 
 <head>
   <meta charset="UTF-8">
@@ -36,15 +36,15 @@
                 <li><a>Submenu 2</a></li>
               </ul>
             </li>
-            <li><a>Blog</a></li>
+            <li><a href="{{url_for('blog')}}">Blog</a></li>
           </ul>
         </div>
         <a class="btn btn-ghost normal-case text-xl">Online Library</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
-          <li><a>SignIn</a></li>
-          <li><a>SignUp</a></li>
+          <li><a href="{{url_for('login')}}">SignIn</a></li>
+          <li><a href="{{url_for('signup')}}">SignUp</a></li>
           <li tabindex="0">
             <a>
               Parent
@@ -57,7 +57,7 @@
               <li><a>Submenu 2</a></li>
             </ul>
           </li>
-          <li><a>Blog</a></li>
+          <li><a href="{{url_for('blog')}}">Blog</a></li>
         </ul>
       </div>
       <div class="dropdown dropdown-end">
