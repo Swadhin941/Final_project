@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="night">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.36.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
-<body>
+{% extends 'Navbar.html' %}
+
+  {% block body %}
     <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="https://placeimg.com/800/200/arch" class="w-full" />
@@ -39,5 +31,5 @@
           </div>
         </div>
       </div>
-</body>
-</html>
+      {% include ('Footer.html') %}
+{% endblock %}
